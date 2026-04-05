@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paytm</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            margin: 0px;
+            font-family: sans-serif;
+            background-color: whitesmoke;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .navbar {
+
+            background-color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 5%;
+        }
+
+        .navbar-dropdown {
+            width: 65%;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .navbar-dropdown select {
+            border: none;
+            font-weight: bold;
+
+        }
+
+        .navbar-links {
+            width: 25%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .navbar-links a {
+            font-weight: bold;
+
+        }
+
+        .sign-in {
+            background-color: #002970;
+            /*image color picker  */
+            color: white;
+            padding: 8px 15px 8px 2px;
+            border-radius: 25px;
+            width: fit-content;
+        }
+
+        .sign-in .fa-user {
+            background-color: #00b7f3;
+            padding: 5px;
+            border-radius: 50%;
+        }
+
+
+        .bank-account-container {
+            display: flex;
+            margin: 2% 5%;
+            align-items: center;
+            justify-content: space-between;
+            background-color: white;
+            padding: 1% 0% 1% 8%;
+            border-radius: 20px;
+        }
+
+        .bank-account img {
+            width: 43%;
+
+        }
+
+        .bank-account h1 {
+            font-size: 2.5rem;
+        }
+
+        .bank-account p {
+            font-size: 1.2rem;
+        }
+
+        .bank-account img {
+            width: 30%;
+        }
+
+        .bank-account-payment-img {
+            width: 45%;
+        }
+
+        .investment-journey {
+            background-image: url("https://assetscdn1.paytm.com/images/catalog/view/1752666927695.png");
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+
+
+
+        .card-super-container {
+            display: flex;
+            gap: 25px;
+            margin: 2% 5%;
+
+        }
+
+        .credit-cards {
+            background-image: url("https://assetscdn1.paytm.com/images/catalog/view_item/1725638720587.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100%;
+            padding: 3%;
+            padding-top: 9%;
+            border-radius: 30px;
+        }
+
+
+
+        .credit-card img {
+            width: 25%;
+
+
+        }
+
+        .credit-card h1 {
+            font-size: 2.5rem;
+        }
+
+        .credit-cards p {
+            font-size: 1.4rem;
+
+        }
+
+        .apply-block {
+            display: flex;
+            align-items: center;
+
+        }
+
+        .apply-block a {
+            color: #002970;
+            border: 1px solid #002970;
+            border-radius: 25px;
+            padding: 7px 10px;
+            margin-right: 5%;
+        }
+
+        .apply-block img {
+            width: 35% !important;
+        }
+
+        .apply-block a:hover {
+            background-color: #002970;
+            color: white;
+        }
+
+        .bottom-img {
+            margin-top: 15%;
+            width: 500px !important;
+        }
+
+        .recharges-bills-container {
+            display: flex;
+            gap: 20px;
+            margin: 2% 5%;
+        }
+
+        .recharge-bills {
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 20px;
+            padding: 2.5%;
+        }
+
+        .payments {
+            display: flex;
+            justify-content: space-evenly;
+            gap: 10px;
+
+        }
+
+        .payments a {
+            text-align: center;
+            padding: 25px 0px;
+            color: black;
+
+        }
+
+        .payments a :hover {
+            background-color: white;
+            box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.2);
+            border-radius: 15px;
+        }
+
+        .payments img {
+            width: 35%;
+            margin-bottom: 20px !important;
+        }
+
+        .card-super-container {
+            display: flex;
+            gap: 25px;
+            margin: 2% 5%;
+            align-items: stretch;
+
+        }
+
+        .credit-cards {
+            flex: 1;
+            min-height: 450px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="">
+            <img src="https://pwebassets.paytm.com/commonwebassets/paytmweb/header/images/logo_new.svg" alt="" />
+        </a>
+        <div class="navbar-dropdown">
+
+            <select>
+                <option value="">Recharge & Bills </option>
+            </select>
+            <select>
+                <option value="">Ticket booking </option>
+            </select>
+            <select>
+                <option value="">Payments & Services </option>
+            </select>
+            <select>
+                <option value="">Paytm for Business </option>
+            </select>
+
+
+        </div>
+
+        <div class="navbar-links">
+
+            <a href="">
+                <i class="fa-solid fa-download"></i>
+                DownLoad App
+            </a>
+
+            <a href="" class="sign-in">
+                <i class="fa-solid fa-user"></i>
+                Sign In
+            </a>
+
+        </div>
+    </nav>
+
+    <div class="recharges-bills-container">
+        <div class="recharge-bills">
+            <h2>Recharges & Bill Payments</h2>
+            <div class="payments">
+                <a href="">
+                    <img src="https://assetscdn1.paytm.com/images/catalog/view_item/2839929/17630252264344684.png"
+                        alt=""><br />
+                    Mobile <br />Recharge
+                </a>
+                <a href="">
+                    <img src="https://assetscdn1.paytm.com/images/catalog/view_item/2839930/24719034555061353.png"
+                        alt=""><br />
+                    DTH <br />Recharge
+                </a>
+                <a href="">
+                    <img src="https://assetscdn1.paytm.com/images/catalog/view_item/2839931/17630306417008374.png"
+                        alt=""><br />
+                    FasTag<br />Recharge
+                </a>
+                <a href="">
+                    <img src="https://assetscdn1.paytm.com/images/catalog/view_item/3171057/25654768955408870.png"
+                        alt=""><br />
+                    Electricity <br />Bill
+                </a>
+                <a href="">
+                    <img src="https://assetscdn1.paytm.com/images/catalog/view_item/3171058/25654802470500577.png"
+                        alt=""><br />
+                    Loan EMI <br />payment
+                </a>
+                <a href="">
+                    <img src="https://assetscdn1.paytm.com/images/catalog/view_item/2839932/17630339117612605.png"
+                        alt=""><br />
+                    View All <br />Products
+                </a>
+
+            </div>
+        </div>
+
+        <img src="https://assetscdn1.paytm.com/images/catalog/view_item/3171065/27389616900368101.png" alt="">
+    </div>
+
+
+
+
+    <div class="bank-account-container">
+        <div class="bank-account">
+            <img src="https://assetscdn1.paytm.com/images/catalog/view/342367/1725447383123.png" alt="">
+
+            <h1> Pay anyone directly from your<span style="color:#00b7f3"> bank account</span></h1>
+
+            <p>Pay anyone, everywhere. Make contactless & secure payments in-stores or online using Paytm UPI or
+                Directly from your Bank Account. Plus, send & receive money from anyone.</p>
+
+            <div class="download-links">
+
+                <a href="">
+                    <img src="https://assetscdn1.paytm.com/images/catalog/view_item/2834703/1725432129171.png" alt="">
+                </a><a href="">
+                    <img src="https://assetscdn1.paytm.com/images/catalog/view_item/2834704/1725432148873.png" alt="">
+                </a>
+            </div>
+        </div>
+
+
+
+        <img class="bank-account-payment-img" src="https://assetscdn1.paytm.com/images/catalog/view/1752741641420.png"
+            alt="">
+    </div>
+
+    <div class="card-super-container">
+        <div class="credit-cards first">
+            <img src="https://assetscdn1.paytm.com/images/catalog/view_item/2988623/27220898816562102.png" alt="">
+            <h1>One destination for<br /><span style="color:#00b7f3;">credit-cards</span></h1>
+            <p>Paytm HDFC, SBI Card & Axis Bank Credit Card with assured Cashback and incredible offers.</p>
+            <div class="apply-block">
+                <a href="">
+                    Apply Now
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <img src="https://assetscdn1.paytm.com/images/catalog/view_item/1741675100265.png" alt="">
+            </div>
+            <img class="bottom-img"
+                src="https://assetscdn1.paytm.com/images/catalog/view_item/2988623/27221716933469500.png" />
+        </div>
+        <div class="credit-cards">
+            <img src="https://assetscdn1.paytm.com/images/catalog/view_item/2834804/1725623952233.png" alt="">
+            <h1>Insurance Ka<br /><span style="color:#00b7f3;">Super Market</span></h1>
+            <p>A Smart, Simple & Transparent Platform to Explore & Purchase Insurance.</p>
+            <div class="apply-block">
+                <a href="">
+                    Get It Now
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+            <img class="bottom-img"
+                src="https://assetscdn1.paytm.com/images/catalog/view_item/2988624/27217428616091880.png" />
+        </div>
+    </div>
+
+
+
+
+    <div class=" bank-account-container investment-journey">
+        <div class="bank-account">
+            <img src="https://assetscdn1.paytm.com/images/catalog/view/308774/1617696247991.png" alt="">
+
+            <h1> Everything you need to start your<span style="color:#00b7f3"> investment journey</span></h1>
+
+            <p>Whether you're a beginner or pro, Paytm Money helps you invest smarter and achieve financial
+                independence. Get access to expert opinion, mutual fund SIP, F&O trading, and much more - all in one
+                app..</p>
+
+            <a href="" class="sign-in">
+
+                Learn More
+
+                <i class="fa-solid fa-right-long"></i>
+            </a>
+            <div class="download-links">
+
+                <p>Investments in the securities market are subject to market risks, read all the related documents
+                    carefully before investing. For complete Terms & Conditions and Disclaimers visit:<a
+                        style="color:#00b7f3" href="">
+                        https://www.paytmmoney.com/stocks/policies/terms</a>
+                </p>
+            </div>
+
+        </div>
+        <img class="bank-account-payment-img" src="https://assetscdn1.paytm.com/images/catalog/view/1752737003196.png"
+            alt="">
+    </div>
+
+
+
+    <div class=" bank-account-container investment-journey">
+        <div class="black-account">
+            <img src="https://assetscdn1.paytm.com/images/catalog/view/342368/1725447964962.png" alt="">
+
+            <h1> Accept payments<span style="color:#00b7f3"> Online & offline</span></h1>
+
+            <p>Millions of small & big businesses use Paytm to accept payments anywhere any time with a wide range of
+                solutions for all kind of merchants</p>
+
+            <a href="" class="sign-in">
+
+                Learn More
+
+                <i class="fa-solid fa-right-long"></i>
+            </a>
+
+
+        </div>
+        <img class="bank-account-payment-img" src="https://assetscdn1.paytm.com/images/catalog/view/1752735625336.png"
+            alt="">
+    </div>
+    </div>
+</body>
+
+</html>
